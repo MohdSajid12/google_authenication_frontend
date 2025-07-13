@@ -43,7 +43,7 @@ const Home = ({ user }) => {
         <>
           <h2>Welcome</h2>
           <p>Please sign in to continue.</p>
-          <a href="http://localhost:5000/auth/google" className="google-login-btn">
+          <a href="https://google-authenication-backend.vercel.app/auth/google" className="google-login-btn">
             <GoogleLogo />
             Sign in with Google
           </a>
