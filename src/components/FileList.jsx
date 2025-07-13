@@ -31,7 +31,7 @@ const FileList = ({ media, onDelete }) => {
             (item.mimetype && item.mimetype.startsWith("image/")) ||
             item.filename.match(/\.(jpg|jpeg|png|gif)$/);
 
-          const fileUrl = `https://google-authenication-backend.vercel.app/uploads/${encodeURIComponent(item.userEmail)}/${item.filename}`;
+           const fileUrl = item.url;
 
 
             console.log(fileUrl)
