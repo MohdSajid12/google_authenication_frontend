@@ -6,7 +6,10 @@ const LogoutButton = ({ setUser }) => {
 
   const handleLogout = async () => {
     try {
-      const result = await axios.get("http://localhost:5000/auth/logout", { withCredentials: true });
+      const result = await axios.get(
+        "https://google-authenication-backend.vercel.app/auth/logout",
+        { withCredentials: true }
+      );
       if (result.data.success) {
         setUser(null);
         navigate("/");
