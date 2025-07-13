@@ -34,8 +34,6 @@ const FileList = ({ media, onDelete }) => {
            const fileUrl = item.url;
 
 
-            console.log(fileUrl)
-
           return (
             <div key={item._id} className="file-item" style={styles.fileItem}>
               <div style={styles.preview}>
