@@ -5,7 +5,6 @@ import Home from "./pages/Home";
 import Upload from "./pages/Upload";
 import { getCurrentUser } from "./api/api"; 
 
-
 function App() {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -56,3 +55,5 @@ function App() {
     </>
   );
 }
+
+export default App;  
