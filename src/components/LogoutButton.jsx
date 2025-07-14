@@ -5,19 +5,21 @@ const LogoutButton = ({ setUser }) => {
   const navigate = useNavigate();
 
   const handleLogout = async () => {
-    try {
-      const result = await axios.get(
-        "https://google-authenication-backend.vercel.app/auth/logout",
-        { withCredentials: true }
-      );
-      if (result.data.success) {
-        setUser(null);
-        navigate("/");
-      }
-    } catch (error) {
-      console.error("Logout error:", error);
+  try {
+    const result = await axios.get(
+      "https://google-authenication-backend.vercel.app/auth/logout",
+      { withCredentials: true }
+    );
+    if (result.data.success) {
+      localStorage.removeItem("token");  
+      setUser(null);                     
+      navigate("/");
     }
-  };
+  } catch (error) {
+    console.error("Logout error:", error);
+  }
+};
+
 
   return (
     <button
