@@ -3,6 +3,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Upload from "./pages/Upload";
+import { getCurrentUser } from "./api/api"; 
 
 
 function App() {
