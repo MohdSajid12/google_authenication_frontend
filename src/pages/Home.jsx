@@ -45,7 +45,7 @@ const Home = ({ user }) => {
           <p>Please sign in to continue.</p>
           <a href="https://google-authenication-backend.vercel.app/auth/google" className="google-login-btn">
             <GoogleLogo />
-            Sign in with Google
+            Sign in with Google test
           </a>
         </>
       )}
